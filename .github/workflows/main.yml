@@ -28,13 +28,13 @@ jobs:
           pyinstaller `
             --onefile `
             --windowed `
-            --icon=".github/workflows/MOJIZ.ico" `
+            --icon="MOJIZ.ico" `
             --name=MOJIZ `
-            --add-data=".github/workflows/MOJIZ.ico;." `
+            --add-data="MOJIZ.ico;." `
             --hidden-import=psutil `
             --hidden-import=requests `
             --hidden-import=winreg `
-            ".github/workflows/MOJIZ.py"
+            MOJIZ.py
 
       - name: Install Inno Setup
         run: choco install innosetup --yes --no-progress
